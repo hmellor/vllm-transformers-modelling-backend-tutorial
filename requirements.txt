@@ -1,3 +1,5 @@
 -e vllm
 -e transformers
+accelerate
+ipykernel
 ipywidgets

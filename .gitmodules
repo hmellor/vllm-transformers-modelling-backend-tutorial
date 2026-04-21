@@ -1,0 +1,6 @@
+[submodule "vllm"]
+	path = vllm
+	url = https://github.com/vllm-project/vllm.git
+[submodule "transformers"]
+	path = transformers
+	url = https://github.com/huggingface/transformers.git

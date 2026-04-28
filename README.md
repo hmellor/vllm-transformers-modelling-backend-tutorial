@@ -25,7 +25,7 @@ Lessons 1–3 use [Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B). Lesson 4
 Clone the repo with submodules (pinned to vLLM v0.19.1 and Transformers v5.5.3):
 
 ```bash
-git clone --recurse-submodules <repo-url>
+git clone --recurse-submodules https://github.com/hmellor/vllm-transformers-modelling-backend-tutorial.git
 cd vllm-transformers-modelling-backend-tutorial
 ```
 
@@ -35,10 +35,10 @@ If you already cloned without `--recurse-submodules`:
 git submodule update --init --recursive
 ```
 
-Create a virtual environment and install dependencies:
+Create a virtual environment and install dependencies ([uv installation](https://docs.astral.sh/uv/getting-started/installation/)):
 
 ```bash
-python -m venv .venv
+uv venv --python 3.12
 source .venv/bin/activate
 # CPU
 uv pip install -r requirements.txt

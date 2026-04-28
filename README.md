@@ -9,7 +9,7 @@ A hands-on tutorial covering inference with Hugging Face Transformers and vLLM, 
 | 1 | `notebooks/lesson_1_transformers.ipynb` | Loading models with `from_pretrained`, text generation, chat templates, continuous batching with `generate_batch`, serving via `transformers serve` |
 | 2 | `notebooks/lesson_2_vllm.ipynb` | The `LLM` class and `SamplingParams`, PagedAttention and continuous batching, `llm.chat()`, serving via `vllm serve` |
 | 3 | `notebooks/lesson_3_transformers_backend.ipynb` | Mixin composition (`Base`, `CausalMixin`, `MoEMixin`), weight mapping and component replacement in `Base.__init__`, the attention bridge via `vllm_flash_attention_forward` and `ALL_ATTENTION_FUNCTIONS`, MoE expert fusion with `FusedMoE` |
-| 4 | `notebooks/lesson_4_bring_your_model.ipynb` | Compatibility checklist for the Transformers backend: `_supports_attention_backend`, `ALL_ATTENTION_FUNCTIONS` dispatch, `**kwargs` pass-through, replaceable experts submodule, `base_model_tp_plan` / `base_model_pp_plan` — walked through on OLMoE vs. DiffLlama |
+| 4 | `notebooks/lesson_4_bring_your_model.ipynb` | Compatibility checklist for the Transformers backend: `_supports_attention_backend`, `ALL_ATTENTION_FUNCTIONS` dispatch, `**kwargs` pass-through, replaceable experts submodule, `base_model_tp_plan` / `base_model_pp_plan` — walked through on OLMoE |
 
 Lessons 1–3 use [Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B). Lesson 4 uses [OLMoE-1B-7B-Instruct](https://huggingface.co/allenai/OLMoE-1B-7B-0125-Instruct) (7B total parameters, 1B active per token) since it walks through that model's compatibility with the Transformers backend.
 
